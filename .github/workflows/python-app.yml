@@ -3,12 +3,16 @@
 
 name: Python application
 
+# on:
+#   push:
+#     branches: [ "main" ]
+#   pull_request:
+#     branches: [ "main" ]
 on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
-
+  schedule:
+    # Run every 5 minutes
+    - cron: "*/5 * * * *"
+    
 permissions:
   contents: read
 
