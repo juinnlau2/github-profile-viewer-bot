@@ -52,6 +52,6 @@ async def run_requests(num_requests):
 
 if __name__ == "__main__":
     start_time = time.time()
-    num_requests = 500  # Number of requests to run concurrently
+    num_requests = 1000  # Number of requests to run concurrently
     asyncio.run(run_requests(num_requests))
     print(f"Time taken: {time.time() - start_time} seconds")
